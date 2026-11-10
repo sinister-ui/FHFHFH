@@ -1,40 +1,49 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,400..600&family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
-  --background: 32 24% 97%;
-  --foreground: 265 30% 12%;
-  --primary: 28 75% 52%;
-  --primary-foreground: 32 24% 98%;
-  --secondary: 270 35% 22%;
-  --secondary-foreground: 32 24% 97%;
-  --muted: 30 20% 92%;
-  --muted-foreground: 265 15% 40%;
-  --accent: 42 85% 58%;
-  --accent-foreground: 265 30% 12%;
-  --border: 30 20% 88%;
-  --card: 32 24% 99%;
-  --card-foreground: 265 30% 12%;
+  /* Marca: vinho profundo #390A12, vinho secundario #4A1019, creme #F8F1E7, bege claro #F1E3D1, dourado #D5A052, texto #32140F */
+  --wine-deep: 350 70% 13%;
+  --wine: 351 64% 18%;
+  --cream: 35 55% 94%;
+  --cream-light: 34 53% 88%;
+  --gold: 36 61% 58%;
+  --ink: 9 54% 13%;
+
+  --background: 35 55% 94%;
+  --foreground: 9 54% 13%;
+  --primary: 36 61% 58%;
+  --primary-foreground: 9 54% 13%;
+  --secondary: 351 64% 18%;
+  --secondary-foreground: 35 55% 94%;
+  --muted: 34 53% 88%;
+  --muted-foreground: 9 25% 34%;
+  --accent: 36 61% 58%;
+  --accent-foreground: 9 54% 13%;
+  --border: 34 32% 80%;
+  --card: 36 42% 97%;
+  --card-foreground: 9 54% 13%;
   --destructive: 0 72% 51%;
-  --destructive-foreground: 32 24% 98%;
-  --radius: 0.9rem;
+  --destructive-foreground: 35 55% 95%;
+  --radius: 0.75rem;
 }
 
 .dark {
-  --background: 265 32% 9%;
-  --foreground: 32 24% 96%;
-  --primary: 28 80% 56%;
-  --primary-foreground: 265 32% 9%;
-  --secondary: 270 25% 18%;
-  --secondary-foreground: 32 24% 96%;
-  --muted: 265 20% 16%;
-  --muted-foreground: 30 15% 65%;
-  --accent: 42 85% 58%;
-  --accent-foreground: 265 32% 9%;
-  --border: 265 20% 20%;
-  --card: 265 28% 12%;
-  --card-foreground: 32 24% 96%;
+  --background: 350 60% 8%;
+  --foreground: 35 55% 94%;
+  --primary: 36 61% 60%;
+  --primary-foreground: 350 70% 10%;
+  --secondary: 351 55% 16%;
+  --secondary-foreground: 35 55% 94%;
+  --muted: 351 35% 15%;
+  --muted-foreground: 34 25% 70%;
+  --accent: 36 61% 60%;
+  --accent-foreground: 350 70% 10%;
+  --border: 351 35% 20%;
+  --card: 351 45% 10%;
+  --card-foreground: 35 55% 94%;
   --destructive: 0 72% 51%;
-  --destructive-foreground: 32 24% 96%;
+  --destructive-foreground: 35 55% 94%;
 }
 
 @theme inline {
@@ -63,11 +72,21 @@
 body {
   background-color: hsl(var(--background));
   color: hsl(var(--foreground));
-  font-family: "Fraunces", "Georgia", serif;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+.font-serif {
+  font-family: "Fraunces", Georgia, serif;
 }
 
 .font-sans-ui {
   font-family: "Inter", system-ui, sans-serif;
+}
+
+.italic-accent {
+  font-family: "Fraunces", Georgia, serif;
+  font-style: italic;
+  color: hsl(var(--primary));
 }
 
 @keyframes fade-in {
