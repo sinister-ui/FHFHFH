@@ -32,8 +32,10 @@ function Hero() {
       <div className="absolute inset-0 -z-10">
         <img
           src={heroImg}
-          alt="Pareja adulta compartiendo un momento íntimo y cálido en casa, acercándose con ternura"
+          alt="Pareja adulta compartiendo un momento íntimo y cálido en casa, iluminados por una luz dorada cálida"
           className="h-full w-full object-cover"
+          loading="eager"
+          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-secondary/80" />
         <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/70 to-secondary/40" />
@@ -159,8 +161,9 @@ function Producto() {
       <div className="mx-auto grid max-w-5xl gap-10 px-5 sm:grid-cols-2 sm:items-center">
         <img
           src={productImg}
-          alt="El Código de la Reconexión mostrado en tablet y celular, con un liga dorado sobre una superficie en tonos crema"
+          alt="El Código de la Reconexión mostrado en tablet y celular, estilo flat lay sobre lino crema con detalles dorados"
           className="aspect-square w-full rounded-3xl object-cover shadow-xl"
+          loading="lazy"
         />
         <div>
           <SectionBadge>El método</SectionBadge>
@@ -230,7 +233,7 @@ function Materiales() {
         <div className="mt-12 grid gap-6 sm:grid-cols-2">
           {items.map((it) => (
             <div key={it.t} className="overflow-hidden rounded-3xl border border-border/60 bg-card/60 shadow-sm">
-              <img src={it.img} alt={it.alt} className="h-48 w-full object-cover" />
+              <img src={it.img} alt={it.alt} className="h-48 w-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy" />
               <div className="p-6">
                 <p className="text-xs uppercase tracking-wide text-primary">{it.tag}</p>
                 <h3 className="mt-2 font-serif text-xl text-foreground">{it.t}</h3>
@@ -418,8 +421,9 @@ function CTAFinal() {
       <div className="absolute inset-0 -z-10">
         <img
           src={ctaImg}
-          alt="Pareja caminándo de la mano hacia la luz, de espaldas, en un momento de calma y esperanza"
+          alt="Pareja caminando de la mano hacia la luz dorada, de espaldas, en un momento de calma y esperanza"
           className="h-full w-full object-cover"
+          loading="lazy"
         />
         <div className="absolute inset-0 bg-secondary/85" />
       </div>
