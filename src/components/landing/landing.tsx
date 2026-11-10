@@ -25,18 +25,18 @@ function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-background" />
       </div>
       <div className="relative mx-auto max-w-3xl px-5 text-center">
-        <SectionBadge>Para quienes sienten que la distancia ya es demasiada</SectionBadge>
+        <SectionBadge>Para quienes sienten que ya casi no queda nada que decirse</SectionBadge>
         <h1 className="mt-6 font-serif text-4xl leading-tight text-foreground sm:text-5xl sm:leading-tight">
-          Si sientes que el amor que construiste se te está escapando entre los dedos, <span className="text-primary">esto es para ti</span>
+          Construiste algo real con esa persona. <span className="text-primary">No dejes que el silencio escriba el final.</span>
         </h1>
         <p className="mt-6 text-lg text-muted-foreground sm:text-xl">
-          Un método práctico, paso a paso, para reconstruir la conexión emocional en días — no en años de terapia ni promesas vacías.
+          El Código de la Reconexión es el método paso a paso que te devuelve la cercanía que creías perdida — en días, no en años de terapia ni consejos que ya probaste mil veces.
         </p>
         <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
           <a href="#oferta" className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-semibold text-primary-foreground shadow-xl shadow-primary/25 transition hover:opacity-90 sm:w-auto">
-            Quiero recuperar mi conexión <ArrowRight className="h-4 w-4" />
+            Quiero empezar a reconectar hoy <ArrowRight className="h-4 w-4" />
           </a>
-          <span className="text-sm text-muted-foreground">Acceso inmediato · Garantía de 7 días</span>
+          <span className="text-sm text-muted-foreground">Acceso inmediato · Garantía de 7 días, sin letra pequeña</span>
         </div>
       </div>
     </section>
@@ -195,8 +195,9 @@ function Oferta() {
   return (
     <section id="oferta" className="border-t border-border/60 bg-card/40 py-20">
       <div className="mx-auto max-w-xl px-5 text-center">
-        <SectionBadge>Oferta de hoy</SectionBadge>
-        <h2 className="mt-5 font-serif text-3xl text-foreground sm:text-4xl">Empieza a reconstruir tu conexión hoy mismo</h2>
+        <SectionBadge>Tu decisión de hoy</SectionBadge>
+        <h2 className="mt-5 font-serif text-3xl text-foreground sm:text-4xl">Dentro de un año vas a recordar este momento: el día que decidiste actuar</h2>
+        <p className="mt-4 text-sm text-muted-foreground">Puedes seguir esperando que las cosas mejoren solas, o puedes dar el primer paso real ahora mismo.</p>
         <div className="mt-8 rounded-3xl border border-primary/30 bg-background p-8 shadow-2xl shadow-primary/10">
           <p className="text-sm uppercase tracking-wide text-muted-foreground">Acceso completo</p>
           <div className="mt-3 flex items-end justify-center gap-3">
@@ -205,9 +206,9 @@ function Oferta() {
           </div>
           <p className="mt-2 text-sm text-muted-foreground">Pago único · Acceso inmediato y de por vida</p>
           <a href="#faq" className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-semibold text-primary-foreground shadow-lg shadow-primary/25 transition hover:opacity-90">
-            Sí, quiero reconectar ahora <ArrowRight className="h-4 w-4" />
+            Sí, quiero mi Código de la Reconexión <ArrowRight className="h-4 w-4" />
           </a>
-          <p className="mt-4 flex items-center justify-center gap-2 text-xs text-muted-foreground"><Lock className="h-3.5 w-3.5" /> Pago 100% seguro y encriptado</p>
+          <p className="mt-4 flex items-center justify-center gap-2 text-xs text-muted-foreground"><Lock className="h-3.5 w-3.5" /> Pago 100% seguro · Garantía de 7 días · Sin compromisos</p>
         </div>
       </div>
     </section>
@@ -282,8 +283,8 @@ function CTAFinal() {
         <div className="flex justify-center gap-1 text-primary">
           {Array.from({ length: 5 }).map((_, i) => <Star key={i} className="h-4 w-4 fill-primary" />)}
         </div>
-        <h2 className="mt-6 font-serif text-3xl text-foreground sm:text-4xl">La distancia no tiene que ser el final de la historia</h2>
-        <p className="mt-4 text-muted-foreground">Hoy puedes dar el primer paso hacia una conexión real, sin esperar que todo se resuelva "solo".</p>
+        <h2 className="mt-6 font-serif text-3xl text-foreground sm:text-4xl">El silencio no es el final de tu historia — es solo la señal de que necesitas un nuevo camino</h2>
+        <p className="mt-4 text-muted-foreground">Miles de parejas sintieron exactamente lo mismo que tú sientes hoy, y lograron reconstruir su conexión aplicando este método. Hoy puedes dar tú el primer paso, sin esperar que todo se resuelva "solo".</p>
         <a href="#oferta" className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-semibold text-primary-foreground shadow-lg shadow-primary/25 transition hover:opacity-90">
           <Sparkles className="h-4 w-4" /> Quiero mi Código de la Reconexión
         </a>
