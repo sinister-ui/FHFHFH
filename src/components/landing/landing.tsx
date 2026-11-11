@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Check, ChevronDown, ArrowRight, ShieldCheck } from "lucide-react";
 import { SectionBadge } from "@/components/landing/section-badge";
-import heroImg from "@/assets/hero-couple.webp";
-import ctaImg from "@/assets/cta-couple.webp";
-import productImg from "@/assets/product-mockup.webp";
-import bonusImg from "@/assets/bonus-flatlay.webp";
+import heroImg from "@/assets/hero-couple-warm.webp";
+import ctaImg from "@/assets/cta-couple-sunset.webp";
+import productImg from "@/assets/product-mockup-new.webp";
+import bonusImg from "@/assets/bonus-flatlay-new.webp";
 
 const CHECKOUT_HREF = "#oferta";
 
